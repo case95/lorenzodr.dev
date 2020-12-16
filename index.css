@@ -480,7 +480,7 @@
   overflow: hidden;
   width: 11ch;
   opacity: 0;
-  font-family: "Nexa Light,  Helvetica, sans-serif";
+  font-family: "Nexa Light", Helvetica, sans-serif;
   filter: brightness(300%);
   padding: 5px;
   animation: typing 6s steps(3) infinite 4s,
