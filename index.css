@@ -28,27 +28,136 @@
   position: relative;
 }
 
+@media (min-width: 992px) {
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: unset !important;
+    width: unset !important;
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .logo-cropper {
+    width: 450px !important;
+    height: 450px;
+    border: white 20px solid !important;
+
+    text-align: center;
+  }
+  #Layer_1 {
+    position: absolute;
+    height: 100px;
+    width: 100px;
+    transform: translate(25%, 25%);
+  }
+  .head {
+    transform: translate(5px, 39px);
+    animation: head 3s ease forwards, animation,
+      bounce-head 1.5s ease-in-out forwards 3.5s infinite;
+  }
+  .lightbulb {
+    transform: translate(5px, 5px);
+    animation: bounce 1.5s ease-in-out forwards 3.5s infinite;
+  }
+
+  .lightbulb-outline {
+    stroke-dasharray: 56.4px;
+    stroke-dashoffset: 56.4px;
+    stroke: white;
+    stroke-width: 0.5px;
+    fill: transparent;
+    animation: lightbulb 2.5s ease forwards, fill 0.5s ease forwards 2.5s;
+  }
+
+  .light {
+    opacity: 0;
+    animation: lights-on 0.5s ease-in forwards 3s;
+  }
+
+  .light-glow-container {
+    width: 75% !important;
+    position: absolute;
+    top: 6% !important;
+    opacity: 0;
+    filter: blur(25px);
+    animation: lights-on 0.5s ease-in forwards 3s,
+      bounce-glow 1.5s ease-in-out forwards 3.5s infinite;
+    mix-blend-mode: hard-light;
+  }
+
+  .light-glow {
+    top: 0;
+    left: 0;
+    /* fill: #efda18; */
+    fill: #efda18;
+    opacity: 1;
+  }
+
+  .logotype {
+    width: 100% !important;
+    fill: transparent;
+    stroke: white;
+    animation: logotype-fill 0.5s ease-in forwards 3s;
+    position: relative;
+    margin-top: 20px;
+    overflow: visible;
+  }
+
+  .logo-container::after {
+    bottom: 6.3% !important;
+    width: 100% !important;
+  }
+
+  .coming-soon {
+    font-size: 35px !important;
+    position: relative;
+    color: white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 11ch;
+    opacity: 0;
+    font-family: "Nexa Light";
+    filter: brightness(300%);
+    padding: 5px;
+    animation: typing 6s steps(3) infinite 4s,
+      coming-soon 0.5s ease-in forwards 4s;
+  }
+
+  .coming-soon::after {
+    content: attr(data-text);
+    padding: 5px;
+    color: white;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    opacity: 0;
+    filter: blur(2px);
+    animation: typing 6s steps(3) infinite 4s, neon 0.5s ease-in forwards 4s,
+      neon-bzz 6s forwards 4s infinite;
+    z-index: -1;
+  }
+}
 .logo-container {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 200px;
-  width: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .logo-cropper {
-  height: 150px;
-  width: 150px;
+  width: 90%;
   border-radius: 50%;
   background-color: rgb(16, 25, 37);
-  border: white 7px solid;
-}
-#Layer_1 {
-  position: absolute;
-  height: 100px;
-  width: 100px;
-  transform: translate(25%, 25%);
+  border: white 35px solid;
 }
 .head {
   transform: translate(5px, 39px);
@@ -75,38 +184,35 @@
 }
 
 .light-glow-container {
+  width: 70%;
   position: absolute;
-  top: 3%;
-  left: 8.5%;
+  top: 5%;
+  transform: translateY(6%);
   opacity: 0;
-  transform: translateY(9px);
-  filter: blur(15px);
+  filter: blur(25px);
   animation: lights-on 0.5s ease-in forwards 3s,
     bounce-glow 1.5s ease-in-out forwards 3.5s infinite;
   mix-blend-mode: hard-light;
 }
 
 .light-glow {
-  top: 0;
-  left: 0;
-  height: 135px;
-  width: 135px;
+  /* fill: #efda18; */
   fill: #efda18;
   opacity: 1;
 }
 
 @keyframes bounce-glow {
   0% {
-    transform: translateY(9px);
-    filter: blur(15px);
+    transform: translateY(6%);
+    /* filter: blur(25px); */
   }
   50% {
-    transform: translateY(3px);
-    filter: blur(3px);
+    transform: translateY(0px);
+    /* filter: blur(10px); */
   }
   100% {
-    transform: translateY(9px);
-    filter: blur(15px);
+    transform: translateY(6%);
+    /* filter: blur(25px); */
   }
 }
 
@@ -176,23 +282,27 @@
   }
 }
 
-#logotype {
+.logotype {
   fill: transparent;
   stroke: white;
+  width: 90%;
   animation: logotype-fill 0.5s ease-in forwards 3s;
+  position: relative;
+  margin-top: 20px;
 }
 
 .logo-container::after {
   content: "";
   background-image: url("/logotype.svg");
   background-repeat: no-repeat;
-  bottom: 22px;
-  left: 0;
-  height: 10%;
-  width: 100%;
   position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 10%;
+  width: 90%;
   opacity: 0;
-  filter: blur(1px);
+  filter: blur(3px);
   animation: neon 0.5s ease-in forwards 3s, neon-bzz 6s forwards 3.5s infinite;
   z-index: -1;
 }
@@ -299,7 +409,7 @@
   0% {
   }
   100% {
-    opacity: 0.5;
+    opacity: 0.7;
   }
 }
 
@@ -308,45 +418,44 @@
     opacity: 0.5;
   }
   20% {
-    opacity: 0.6;
+    opacity: 0.7;
   }
   22% {
     opacity: 0.2;
-    filter: blur(0.3px);
+    filter: blur(1px);
   }
   24% {
-    opacity: 0.5;
-    filter: blur(1px);
+    opacity: 0.7;
+    filter: blur(3px);
   }
   60% {
     opacity: 0.7;
   }
   61% {
     opacity: 0.2;
-    filter: blur(0.3px);
-  }
-  62% {
-    opacity: 0.5;
     filter: blur(1px);
   }
+  62% {
+    opacity: 0.7;
+    filter: blur(3px);
+  }
   70% {
-    opacity: 0.8;
+    opacity: 0.7;
   }
   71% {
     opacity: 0.2;
-    filter: blur(0.3px);
+    filter: blur(1px);
   }
   72% {
     opacity: 0.5;
-    filter: blur(1px);
+    filter: blur(3px);
   }
 }
 
 .coming-soon {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  position: relative;
   color: white;
+  font-size: 70px;
   white-space: nowrap;
   overflow: hidden;
   width: 11ch;
@@ -368,9 +477,9 @@
   width: 100%;
   position: absolute;
   opacity: 0;
-  filter: blur(2px);
+  filter: blur(5px);
   animation: typing 6s steps(3) infinite 4s, neon 0.5s ease-in forwards 4s,
-    neon-bzz 6s forwards 4s infinite;
+    neon-bzz-typo 6s forwards 4s infinite;
   z-index: -1;
 }
 
@@ -392,5 +501,44 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes neon-bzz-typo {
+  0% {
+    opacity: 0.7;
+  }
+  20% {
+    opacity: 1;
+  }
+  22% {
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+  24% {
+    opacity: 1;
+    filter: blur(3px);
+  }
+  60% {
+    opacity: 1;
+  }
+  61% {
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+  62% {
+    opacity: 1;
+    filter: blur(3px);
+  }
+  70% {
+    opacity: 1;
+  }
+  71% {
+    opacity: 0.2;
+    filter: blur(1px);
+  }
+  72% {
+    opacity: 0.7;
+    filter: blur(3px);
   }
 }
