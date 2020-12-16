@@ -28,22 +28,20 @@
   position: relative;
 }
 
-@media (min-width: 992px) {
+@media screen and (orientation: portrait) {
   .logo-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: unset !important;
-    width: unset !important;
-    display: flex !important;
-    flex-direction: column !important;
+    width: 80% !important;
   }
 
   .logo-cropper {
-    width: 450px !important;
-    height: 450px;
-    border: white 20px solid !important;
+    width: 100% !important;
+    height: unset;
+    border: white 35px solid !important;
 
     text-align: center;
   }
@@ -91,7 +89,6 @@
   .light-glow {
     top: 0;
     left: 0;
-    /* fill: #efda18; */
     fill: #efda18;
     opacity: 1;
   }
@@ -101,18 +98,20 @@
     fill: transparent;
     stroke: white;
     animation: logotype-fill 0.5s ease-in forwards 3s;
-    position: relative;
     margin-top: 20px;
     overflow: visible;
   }
-
-  .logo-container::after {
-    bottom: 6.3% !important;
+  .logotype-container {
+    position: relative;
+    width: 100%;
+  }
+  .logotype-container::after {
+    position: absolute;
     width: 100% !important;
   }
 
   .coming-soon {
-    font-size: 35px !important;
+    font-size: 4em !important;
     position: relative;
     color: white;
     white-space: nowrap;
@@ -142,6 +141,24 @@
     z-index: -1;
   }
 }
+
+@media screen and (orientation: landscape) {
+  .logo-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: unset !important;
+    width: unset !important;
+  }
+  .logo-cropper {
+    height: 100% !important;
+    border-radius: 50%;
+    background-color: rgb(16, 25, 37);
+    border: white 15px solid !important;
+  }
+}
+
 .logo-container {
   position: absolute;
   top: 50%;
@@ -196,7 +213,6 @@
 }
 
 .light-glow {
-  /* fill: #efda18; */
   fill: #efda18;
   opacity: 1;
 }
@@ -204,15 +220,15 @@
 @keyframes bounce-glow {
   0% {
     transform: translateY(6%);
-    /* filter: blur(25px); */
+    filter: blur(25px);
   }
   50% {
     transform: translateY(0px);
-    /* filter: blur(10px); */
+    filter: blur(10px);
   }
   100% {
     transform: translateY(6%);
-    /* filter: blur(25px); */
+    filter: blur(25px);
   }
 }
 
@@ -285,22 +301,26 @@
 .logotype {
   fill: transparent;
   stroke: white;
-  width: 90%;
+  width: 100%;
   animation: logotype-fill 0.5s ease-in forwards 3s;
   position: relative;
   margin-top: 20px;
 }
 
-.logo-container::after {
+.logotype-container {
+  position: relative;
+}
+
+.logotype-container::after {
   content: "";
   background-image: url("/logotype.svg");
   background-repeat: no-repeat;
   position: absolute;
-  bottom: 6%;
+  top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  height: 10%;
-  width: 90%;
+  height: 100%;
+  width: 100%;
   opacity: 0;
   filter: blur(3px);
   animation: neon 0.5s ease-in forwards 3s, neon-bzz 6s forwards 3.5s infinite;
@@ -455,7 +475,7 @@
 .coming-soon {
   position: relative;
   color: white;
-  font-size: 70px;
+  font-size: 2em;
   white-space: nowrap;
   overflow: hidden;
   width: 11ch;
@@ -485,13 +505,16 @@
 
 @keyframes typing {
   0% {
-    width: 10.35ch;
+    max-width: 90%;
+    width: 6.4em;
   }
   50% {
-    width: 11.2ch;
+    max-width: 90%;
+    width: 7em;
   }
   100% {
-    width: 10.35ch;
+    max-width: 90%;
+    width: 6.4em;
   }
 }
 
