@@ -52,11 +52,11 @@
     ul{
       list-style: none;
     }
-    li::marker{
+    *::marker{
         content:'' !important;
         display:none !important;
-        width: 0;
-        height:0;
+        width: 0 !important;
+        height:0 !important;
       }
   }
 
