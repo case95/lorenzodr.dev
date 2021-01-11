@@ -1,26 +1,64 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <PageLoader v-if="!isLoaded"/>
+  <Header />
+  <Container v-if="content"/>
+  <Footer />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  import Container from './components/layout/Container'
+  import PageLoader from './components/layout/PageLoader'
+  import Header from './components/layout/Header.vue';
+  import Footer from './components/layout/Footer.vue';
+  export default {
+    name:"App",
+    components:{Container, PageLoader, Header, Footer},
+    data () {
+        return {
+            isLoaded: false,
+            content: false
+        }
+    },
+    mounted() {
+        document.onreadystatechange = () => {
+          const loader = document.getElementById("loader")
+            setTimeout(() => {
+                if (document.readyState === 'complete') {
+                    this.content = true
+                    loader.style.opacity = 0
+                    setTimeout(() => {
+                      this.isLoaded = true
+                    }, 300)
+                }
+            }, 5000)
+        }
+    }
   }
-}
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+  @import '@/assets/_shared.scss';
+
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    a{
+      text-decoration: none;
+      color: $my-white;
+    }
+    
+    ul{
+      list-style: none;
+    }
+    li::marker{
+        content:'' !important;
+        display:none !important;
+        width: 0;
+        height:0;
+      }
+  }
+
+
 </style>
