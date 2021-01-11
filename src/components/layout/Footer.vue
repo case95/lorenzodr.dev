@@ -1,5 +1,9 @@
 <template>
-    <p class="footer">Designed and developed by Lorenzo Del Rosario <i class="fa fa-linkedin"></i></p>
+    <div class="footer">
+        <p class="footer-copyright">
+            Designed and developed by Lorenzo Del Rosario  <i class="fa fa-linkedin"></i>
+        </p>
+    </div>
 </template>
 
 <script>
@@ -13,49 +17,52 @@ export default {
 @import '@/assets/_shared.scss';
 
 .footer{
-    padding: 20px 25px;
+    padding: 0 25px 20px 25px;
     transition: padding 0.2s ease-in-out;
     background-color: $my-black;
-    color: $my-white;
-    border-top: 1px solid $my-white;
+    color: $my-gray;
     text-align: center;
-    font-family: 'Inconsolata', monospace;
     z-index: 2;
-    .fa {
-        background-color: $my-acqua;
-        padding: 2px;
-        border-radius: 2px;
-        color: $my-black;
-        position: relative;
-        z-index: 2;
-        &::after{
-            content: "";
-            position: absolute;
-            top: -1px;
-            left: -1px;
-            bottom: -1px;
-            right: -1px;
+    #{&}-copyright {
+        font-family: 'Inconsolata', monospace;
+        padding-top: 20px;
+        border-top: 1px solid $my-white;
+        .fa {
+            background-color: $my-acqua;
+            padding: 2px;
             border-radius: 2px;
-            z-index: 1;
-            box-sizing: border-box;
-            animation: none;
-            filter: blur(2px) ;
-            opacity: 0;
-            @include transition-button(opacity);
-        }
-        &:hover{
-         background-color: $my-white;
-         &::after {
-                opacity: 1;
-                border: $my-acqua 2px solid;
-                animation: neon-bzz 3s forwards infinite;
+            color: $my-black;
+            position: relative;
+            z-index: 2;
+            &::after{
+                content: "";
+                position: absolute;
+                top: -1px;
+                left: -1px;
+                bottom: -1px;
+                right: -1px;
+                border-radius: 2px;
+                z-index: 1;
+                box-sizing: border-box;
+                animation: none;
+                filter: blur(2px) ;
+                opacity: 0;
+                @include transition-button(opacity);
+            }
+            &:hover{
+            background-color: $my-white;
+            &::after {
+                    opacity: 1;
+                    border: $my-acqua 2px solid;
+                    animation: neon-bzz 3s forwards infinite;
+                }
             }
         }
     }
 }
 
     @media screen and (min-width: $SM ) {
-        .header {
+        .footer {
             padding: 20px 50px;
         }
     }

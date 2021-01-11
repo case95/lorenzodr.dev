@@ -27,24 +27,24 @@ export default {
                 {
                     title:"Aeolians",
                     links:{link:"https://www.aeoliansholiday.com/", github:"https://github.com/case95/aeolians"},
-                    skills:["React", "Redux", "Firebase"],
+                    skills:["React.js", "Redux", "Firebase"],
                     image:["/img/projects/aeolians_1.png", "/img/projects/aeolians_2.png"],
-                    description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.",
+                    description:"Aeolians is an italian rental company for holiday houses in Eolie Islands. \nMy work has been to design the visual identity of the website and develope it in React.js, connecting the website to a firebase database and develop a custom CMS to allow the business owner to manage the apartments informations like descriptions, photos, services, booking links. \nThe main challenge has been understanding and working with a NOSQL database and manage the authentication on Firebase rules.",
                 },
                 {
                     title:"The Italian Job",
                     links:{link:"", github:"https://github.com/case95/myjobapp"},
-                    skills:["React", "Redux", "Firebase"],
+                    skills:["React.js", "Redux", "Node.js", "Express", "JWT token"],
                     image:["/img/projects/theitalianjob_1.png", "/img/projects/theitalianjob_2.png"],
-                    description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.",
+                    description:"TheItalianJob project is a platform thought for italian people linving abroad who are looking for other italian workers. \nTIt has born looking in italian groups of people living abroad: there's an high request of workers with the same backgound. It features an authentication system to create your profile so the employers can search for their best fit. \nIt is in development phase and covers some full-stack development skills, an intresting challenge for myself.",
                 },
-                // {
-                //     title:"Quello",
-                //     links:{link:"www.google.com", github:""},
-                //     skills:["React", "Redux", "Firebase"],
-                //     image:"https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/bcf94f19-a227-40dc-a067-87032901bef8/de3x91g-6a7f4f52-2fed-493b-aba0-efe32fcaf186.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOiIsImlzcyI6InVybjphcHA6Iiwib2JqIjpbW3sicGF0aCI6IlwvZlwvYmNmOTRmMTktYTIyNy00MGRjLWEwNjctODcwMzI5MDFiZWY4XC9kZTN4OTFnLTZhN2Y0ZjUyLTJmZWQtNDkzYi1hYmEwLWVmZTMyZmNhZjE4Ni5qcGcifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6ZmlsZS5kb3dubG9hZCJdfQ.FdKTHOTtvXnjcfSau_HxWsMbiLJkLd1-AfchjDVj_e4",
-                //     description:"Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec.",
-                // }
+                {
+                    title:"Portfolio 1.0.0",
+                    links:{link:"", github:"https://github.com/case95/lorenzodr.dev"},
+                    skills:["Vue.js", "SCSS"],
+                    image:["/img/projects/lorenzodr_1.png", "/img/projects/lorenzodr_2.png"],
+                    description:"This portfolio has been a fun and easy project that allowed me to focus on learning the basicts of Vue.js framework, SVG animations and move my first steps with SCSS functions, mixins and variables.",
+                },
             ]
         }
     },
@@ -57,8 +57,14 @@ export default {
 .projects{
     // min-height: 100vh;
     padding: 80px 0;
-    .preview:last-child {
-        border-bottom: none !important;
+    .preview{
+        &:last-child {
+            border-bottom: none !important;
+            padding-bottom: 0;
+        }
+        &:nth-child(2) {
+            padding-top: 0 !important;
+        }
     }
 }
 

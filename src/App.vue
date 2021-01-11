@@ -48,10 +48,10 @@
       text-decoration: none;
       color: $my-white;
     }
-    
-    ul{
-      list-style: none;
+    *{
+      list-style-type: none !important;
     }
+    
     *::marker{
         content:'' !important;
         display:none !important;
