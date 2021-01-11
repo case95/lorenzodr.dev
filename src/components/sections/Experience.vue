@@ -12,7 +12,7 @@
         
         
         <div class="button-container">
-            <a href="/img/download/Lorenzo Del Rosario's Curriculum.pdf" download> <Button child="Download Resume"/> </a>
+            <a href="/Lorenzo Del Rosario's Curriculum.pdf" download> <Button child="Download Resume"/> </a>
         </div>
     </div>
 </template>

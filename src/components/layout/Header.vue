@@ -18,6 +18,11 @@
                         Experience
                     </li>
                 </a>
+                <a href="#projects" class="nav-link">
+                    <li class="nav-item">
+                        Projects
+                    </li>
+                </a>
                 <a href="#contacts" class="nav-link">
                     <li class="nav-item">
                         Contacts
@@ -62,7 +67,7 @@
             </a>
         </ul>
         <div>
-            <a href="/img/download/Lorenzo Del Rosario's Curriculum.pdf" download> <Button class="nav-button" child="Download Resume"/> </a>
+            <a href="/Lorenzo Del Rosario's Curriculum.pdf" download> <Button class="nav-button" child="Download Resume"/> </a>
         </div>
     </div>
 </div>
