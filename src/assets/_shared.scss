@@ -1,0 +1,58 @@
+//dark color palette
+$my-black: #141d30;
+$my-white: white;
+$my-gray: #707e86;
+$my-acqua: #60dafb;
+
+//light color palette
+
+//font-size
+$text: 16px;
+$button: 16px;
+$h2: 20px;
+$hero: clamp(40px, 8vw, 80px);
+
+//img cropper proportions
+$ratio-16-9: 56.25%;
+$ratio-16-9-flex-2-3: 37.5%;
+
+//breakpoints
+$SM: 576px;
+$MD: 768px;
+$LG: 992px;
+
+//mixins
+
+//button
+@mixin transition-button($pointer) {
+  transition: $pointer 0.15s ease-in;
+}
+
+//header
+@mixin transition-header($pointers, $delays) {
+  $transition: ();
+
+  @for $i from 1 through length($pointers) {
+    $transition: append(
+      $transition,
+      nth($pointers, $i) 0.2s ease-in-out nth($delays, $i),
+      $separator: comma
+    );
+  }
+  transition: $transition;
+}
+
+//hero
+@mixin transition-hero {
+  transition: color 0.3s ease-in-out;
+}
+
+//Experience
+@mixin transition-experience($pointer) {
+  transition: $pointer 0.3s ease-in-out;
+}
+
+//Contacts
+@mixin transition-contacts {
+  transition: color 0.3s ease-in-out;
+}
