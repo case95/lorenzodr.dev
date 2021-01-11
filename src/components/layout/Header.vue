@@ -60,6 +60,11 @@
                     Experience
                 </li>
             </a>
+            <a href="#projects" class="nav-link">
+                <li class="nav-item">
+                    Projects
+                </li>
+            </a>
             <a href="#contacts" class="nav-link">
                 <li class="nav-item">
                     Contacts
@@ -67,7 +72,7 @@
             </a>
         </ul>
         <div>
-            <a href="/Lorenzo Del Rosario's Curriculum.pdf" download> <Button class="nav-button" child="Download Resume"/> </a>
+            <a href="/Lorenzo Del Rosario's Curriculum.pdf" download> <Button class="nav-button" child="Resume"/> </a>
         </div>
     </div>
 </div>
@@ -104,7 +109,6 @@ export default {
     height: 100px;
     display: flex;
     justify-content: space-between;
-    font-family: 'Inconsolata', monospace !important;
     background-color: $my-black;
     box-shadow: 0px 7px 7px rgba($color: #000000, $alpha: 0.7);
     @include transition-header(padding margin top, 0s 0s 0s);
@@ -155,12 +159,14 @@ export default {
                 justify-content: space-between;
                 flex-wrap: wrap;
                 height: 100%;
+                transition: padding 0.3s ease-in-out;
                 .nav-link{
                     display: inline-flex;
                     .nav-item{
                         display:flex;
                         position: relative;
                         margin: 0 auto 0 0;
+                        font-family: 'Inconsolata', monospace;
                         &::after{
                             content: "";
                             display:flex;
@@ -315,6 +321,7 @@ export default {
             margin: 0 5px;
             color: $my-white;
             position: relative;
+            font-family: 'Inconsolata', monospace;
             &::after{
                 content: "";
                 display:flex;
@@ -346,6 +353,17 @@ export default {
 @media screen and (min-width: $SM ) {
     .header {
         padding: 0 50px;
+        .navbar-small{
+            .nav-links{
+                padding: 25px 50px !important;
+            }
+        }
+    }
+  }
+
+  @media screen and (min-width: $MD ) {
+    .header {
+        padding: 0 100px;
         .nav-logo-container {
             position: unset;
             left: 0%;
@@ -370,12 +388,6 @@ export default {
                 display: none;
             }
         }
-    }
-  }
-
-  @media screen and (min-width: $MD ) {
-    .header {
-        padding: 0 100px;
     }
   }
 
