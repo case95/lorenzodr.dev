@@ -6,8 +6,8 @@
                 <p class="bio-text">
                     Hi, I'm Lorenzo, it's nice to have you here!
                     I'm an Italian-australian frontend developer, curious by nature, wannabe fullstack developer and always aiming at improvement.<br><br>
-                    Since young age I've always been passionated by creating something out of nothing: I was always drawing, painting or 3D modeling. 
-                    This passion moved me to get a bachelore in product design during which I started thinking about web development. So, after I completed the product design bachelore, I started moving my first steps with the rudimentals of HTML and CSS and some basic programming courses.
+                    Since a young age I've always been passionated by creating something out of nothing: I was always drawing, painting or 3D modeling. 
+                    This passion moved me to get a bachelor in product design during which I started thinking about web development. So, after I completed the product design bachelore, I started moving my first steps with the rudimentals of HTML and CSS and some basic programming courses.
                     The more I studied it the more I enjoyed it.
                     During 2020 I fully submerged in the web development world so I joinined and created groups of developers thought to share our development skills by having meetings during our free time to discuss about web technologies.<br><br>
                     I'm now attending a Web Development Diploma at Holmesglen in Melbourne while looking to offer my skills and learn much more in the near future. <b>#alwayslearning</b>
