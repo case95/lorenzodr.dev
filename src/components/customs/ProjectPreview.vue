@@ -83,7 +83,7 @@ export default {
                 &:nth-child(2) {
                     opacity: 0;
                 }
-                &:hover {
+                &:hover, &:active {
                     &:nth-child(2) {
                         opacity: 1;
                     }

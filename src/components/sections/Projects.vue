@@ -43,7 +43,7 @@ export default {
                     links:{link:"", github:"https://github.com/case95/lorenzodr.dev"},
                     skills:["Vue.js", "SCSS"],
                     image:["/img/projects/lorenzodr_1.png", "/img/projects/lorenzodr_2.png"],
-                    description:"This portfolio has been a fun and easy project that allowed me to focus on learning the basicts of Vue.js framework, SVG animations and move my first steps with SCSS functions, mixins and variables.",
+                    description:"This portfolio has been a fun and easy project that allowed me to focus on learning the basics of Vue.js framework, SVG animations and move my first steps with SCSS functions, mixins and variables.",
                 },
             ]
         }

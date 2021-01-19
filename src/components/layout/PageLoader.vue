@@ -15,9 +15,9 @@
                         
                     </g>
                 </svg>
-                <svg viewBox="-10 -7 70 70" class="light-glow-container">
+                <!-- <svg viewBox="-10 -7 70 70" class="light-glow-container">
                     <path class="light-glow" d="M22.89,15.36l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8,9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22"/>
-                </svg>
+                </svg> -->
             </div>
             
             <div class="logotype-container">
@@ -128,12 +128,12 @@ export default {
         //     mix-blend-mode: hard-light;
         // }
 
-        .light-glow {
-            top: 0;
-            left: 0;
-            fill: #efda18;
-            opacity: 1;
-        }
+        // .light-glow {
+        //     top: 0;
+        //     left: 0;
+        //     fill: #efda18;
+        //     opacity: 1;
+        // }
 
         .logotype {
             width: 100% !important;
@@ -220,38 +220,38 @@ export default {
         animation: lights-on 0.5s ease-in forwards 3s;
     }
 
-    .light-glow-container {
-        width: 100%;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        transform: translate(-50%, 6%);
-        opacity: 0;
-        filter: blur(25px);
-        animation: lights-on 0.5s ease-in forwards 3s,
-            bounce-glow 1.5s ease-in-out forwards 3.5s infinite;
-        mix-blend-mode: hard-light;
-    }
+    // .light-glow-container {
+    //     width: 100%;
+    //     position: absolute;
+    //     top: 0;
+    //     left: 50%;
+    //     transform: translate(-50%, 6%);
+    //     opacity: 0;
+    //     filter: blur(25px);
+    //     animation: lights-on 0.5s ease-in forwards 3s,
+    //         bounce-glow 1.5s ease-in-out forwards 3.5s infinite;
+    //     mix-blend-mode: hard-light;
+    // }
 
-    .light-glow {
-        fill: #efda18;
-        opacity: 1;
-    }
+    // .light-glow {
+    //     fill: #efda18;
+    //     opacity: 1;
+    // }
 
-    @keyframes bounce-glow {
-        0% {
-            transform: translate(-50%, 6%);
-            filter: blur(25px);
-        }
-        50% {
-            transform: translate(-50%, 0);
-            filter: blur(10px);
-        }
-        100% {
-            transform: translate(-50%, 6%);
-            filter: blur(25px);
-        }
-    }
+    // @keyframes bounce-glow {
+    //     0% {
+    //         transform: translate(-50%, 6%);
+    //         filter: blur(25px);
+    //     }
+    //     50% {
+    //         transform: translate(-50%, 0);
+    //         filter: blur(10px);
+    //     }
+    //     100% {
+    //         transform: translate(-50%, 6%);
+    //         filter: blur(25px);
+    //     }
+    // }
 
     @keyframes lightbulb {
         0% {
