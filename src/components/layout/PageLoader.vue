@@ -1,21 +1,18 @@
 <template>
     <div class="loader" id="loader">
         <div class="logo-container">
-            <svg class="logo-cropper" id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
-            
-            <title>
-                Asset 10
-            </title>
-            <g class='head'>
-                <path class="cls-1" d="M44.88,34.47c0-.29,0-.59,0-.88a11,11,0,0,0-17.65-8.85,12.85,12.85,0,0,0-8.93-3.58A12.59,12.59,0,0,0,6.09,36.57,7.9,7.9,0,0,0,0,44.25H3.49a4.4,4.4,0,0,1,4.4-4.4l.4,0,.38,0a11.17,11.17,0,0,1,3,.88,43,43,0,0,1-1.86-3.94,9.06,9.06,0,0,1,8.53-12.2,9.25,9.25,0,0,1,7.38,3.6L27,29.9l1.42-1.5a7.55,7.55,0,0,1,13,5.19c0,.16,0,.32,0,.48a4.33,4.33,0,0,1-1.59,2.83,4.39,4.39,0,0,1,2.65.23,7.21,7.21,0,0,1,4.05,6.46q0,.29,0,.57l3.48.28c0-.28,0-.56,0-.84A10.71,10.71,0,0,0,44.88,34.47Z"/>
-                <circle class="cls-1" cx="15.96" cy="47.72" r="2.28"/>
-                <circle class="cls-1" cx="34.17" cy="47.72" r="2.28"/>
-            </g>
-            <g class='lightbulb'>
-                <path id='lightbulb' class="lightbulb-outline" d="M25,0H25a7.23,7.23,0,0,0-5.47,11.85A7,7,0,0,1,20.68,14c.26,1,.32,1.38.32,1.38h0l.05.49v2l0,.3c.16,1,1.16,2.71,3.88,2.78H25c2.72-.07,3.71-1.78,3.87-2.78v-2.2L29,15.4s.05-.32.33-1.43a7,7,0,0,1,1.16-2.08A7.23,7.23,0,0,0,25,0Zm0,19c-1.88,0-2.07-1.2-2.07-1.2V16.11h4.14v1.73S26.88,19,25,19Zm4-8.37a9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22H22.89l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8Z"/>
-                <path class="cls-2 light" d="M22.89,15.36l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8,9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22"/>
-                
-            </g>
+            <svg class="logo-cropper" id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 70 70">
+                <circle cx="30" cy="30" r="35" stroke="white" stroke-width="5" fill="transparent" />
+                <g class='head'>
+                    <path class="cls-1" d="M44.88,34.47c0-.29,0-.59,0-.88a11,11,0,0,0-17.65-8.85,12.85,12.85,0,0,0-8.93-3.58A12.59,12.59,0,0,0,6.09,36.57,7.9,7.9,0,0,0,0,44.25H3.49a4.4,4.4,0,0,1,4.4-4.4l.4,0,.38,0a11.17,11.17,0,0,1,3,.88,43,43,0,0,1-1.86-3.94,9.06,9.06,0,0,1,8.53-12.2,9.25,9.25,0,0,1,7.38,3.6L27,29.9l1.42-1.5a7.55,7.55,0,0,1,13,5.19c0,.16,0,.32,0,.48a4.33,4.33,0,0,1-1.59,2.83,4.39,4.39,0,0,1,2.65.23,7.21,7.21,0,0,1,4.05,6.46q0,.29,0,.57l3.48.28c0-.28,0-.56,0-.84A10.71,10.71,0,0,0,44.88,34.47Z"/>
+                    <circle class="cls-1" cx="15.96" cy="45" r="2.28"/>
+                    <circle class="cls-1" cx="34.17" cy="45" r="2.28"/>
+                </g>
+                <g class='lightbulb'>
+                    <path id='lightbulb' class="lightbulb-outline" d="M25,0H25a7.23,7.23,0,0,0-5.47,11.85A7,7,0,0,1,20.68,14c.26,1,.32,1.38.32,1.38h0l.05.49v2l0,.3c.16,1,1.16,2.71,3.88,2.78H25c2.72-.07,3.71-1.78,3.87-2.78v-2.2L29,15.4s.05-.32.33-1.43a7,7,0,0,1,1.16-2.08A7.23,7.23,0,0,0,25,0Zm0,19c-1.88,0-2.07-1.2-2.07-1.2V16.11h4.14v1.73S26.88,19,25,19Zm4-8.37a9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22H22.89l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8Z"/>
+                    <path class="cls-2 light" d="M22.89,15.36l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8,9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22"/>
+                    
+                </g>
             </svg>
             <svg viewBox="0 0 50 50" class="light-glow-container">
             <path class="light-glow" d="M22.89,15.36l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8,9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22"/>
@@ -44,7 +41,6 @@
             </svg>
             </div>
             
-            <!-- <p class="coming-soon" data-text="Coming soon ...">Coming soon ...</p> -->
         </div>
     </div>
 </template>
@@ -59,22 +55,7 @@ export default {
 
 <style scoped lang='scss'>
     @import '@/assets/_shared.scss';
-    // @import url(//db.onlinewebfonts.com/c/12108809f49c49bcdc126dcecc938761?family=Nexa+Light);
-
-    // @font-face {
-    // font-family: "Nexa Light";
-    // src: url("//db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.eot");
-    // src: url("//db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.eot?#iefix")
-    //     format("embedded-opentype"),
-    //     url("//db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.woff2")
-    //     format("woff2"),
-    //     url("//db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.woff")
-    //     format("woff"),
-    //     url("//db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.ttf")
-    //     format("truetype"),
-    //     url("//db.onlinewebfonts.com/t/12108809f49c49bcdc126dcecc938761.svg#Nexa Light")
-    //     format("svg");
-    // }
+    
     .cls-1{fill:white;}
     .cls-2{fill:#efda18;}
     .cls-3{ stroke-miterlimit:10; stroke-width:0.1px;}
@@ -116,18 +97,12 @@ export default {
         .logo-cropper {
             width: 100% !important;
             height: unset;
-            border: white 35px solid !important;
-
             text-align: center;
         }
-        #Layer_1 {
-            position: absolute;
-            height: 100px;
-            width: 100px;
-            transform: translate(25%, 25%);
-        }
+        
         .head {
-            transform: translate(5px, 39px);
+
+            transform: translate(50px, 0px);
             animation: head 3s ease forwards, animation,
             bounce-head 1.5s ease-in-out forwards 3.5s infinite;
         }
@@ -184,37 +159,6 @@ export default {
             position: absolute;
             width: 100% !important;
         }
-
-    //     .coming-soon {
-    //         font-size: 4em !important;
-    //         position: relative;
-    //         color: white;
-    //         white-space: nowrap;
-    //         overflow: hidden;
-    //         width: 11ch;
-    //         opacity: 0;
-    //         font-family: "Nexa Light";
-    //         filter: brightness(300%);
-    //         padding: 5px;
-    //         animation: typing 6s steps(3) infinite 4s,
-    //         coming-soon 0.5s ease-in forwards 4s;
-    //     }
-
-    //     .coming-soon::after {
-    //         content: attr(data-text);
-    //         padding: 5px;
-    //         color: white;
-    //         top: 0;
-    //         left: 0;
-    //         height: 100%;
-    //         width: 100%;
-    //         position: absolute;
-    //         opacity: 0;
-    //         filter: blur(2px);
-    //         animation: typing 6s steps(3) infinite 4s, neon 0.5s ease-in forwards 4s,
-    //         neon-bzz 6s forwards 4s infinite;
-    //         z-index: -1;
-    //     }
     }
 
     @media screen and (orientation: landscape) {
@@ -230,7 +174,6 @@ export default {
             height: 100% !important;
             border-radius: 50%;
             background-color: $my-black;
-            border: white 15px solid !important;
         }
     }
 
@@ -246,13 +189,12 @@ export default {
     }
 
     .logo-cropper {
-        width: 90%;
+        width: 100%;
         border-radius: 50%;
         background-color: $my-black;
-        border: white 35px solid;
     }
     .head {
-        transform: translate(5px, 39px);
+        transform: translate(50px, 0px);
         animation: head 3s ease forwards, animation,
             bounce-head 1.5s ease-in-out forwards 3.5s infinite;
     }
@@ -339,19 +281,19 @@ export default {
             transform: translate(5px, 39px);
         }
         100% {
-            transform: translate(5px, 6.7px);
+            transform: translate(5px, 10px);
         }
     }
 
     @keyframes bounce-head {
         0% {
-            transform: translate(5px, 6.7px);
+            transform: translate(5px, 10px);
         }
         50% {
-            transform: translate(5px, 8px);
+            transform: translate(5px, 12px);
         }
         100% {
-            transform: translate(5px, 6.7px);
+            transform: translate(5px, 10px);
         }
     }
 
@@ -546,61 +488,6 @@ export default {
             filter: blur(3px);
         }
     }
-
-    // .coming-soon {
-    //     position: relative;
-    //     color: white;
-    //     font-size: 2em;
-    //     white-space: nowrap;
-    //     overflow: hidden;
-    //     width: 11ch;
-    //     opacity: 0;
-    //     font-family: "Nexa Light", Helvetica, sans-serif;
-    //     filter: brightness(300%);
-    //     padding: 5px;
-    //     animation: typing 6s steps(3) infinite 4s,
-    //     coming-soon 0.5s ease-in forwards 4s;
-    // }
-
-    // .coming-soon::after {
-    //     content: attr(data-text);
-    //     padding: 5px;
-    //     color: white;
-    //     top: 0;
-    //     left: 0;
-    //     height: 100%;
-    //     width: 100%;
-    //     position: absolute;
-    //     opacity: 0;
-    //     filter: blur(5px);
-    //     animation: typing 6s steps(3) infinite 4s, neon 0.5s ease-in forwards 4s,
-    //         neon-bzz-typo 6s forwards 4s infinite;
-    //     z-index: -1;
-    // }
-
-    // @keyframes typing {
-    //     0% {
-    //         max-width: 90%;
-    //         width: 6.4em;
-    //     }
-    //     50% {
-    //         max-width: 90%;
-    //         width: 7em;
-    //     }
-    //     100% {
-    //         max-width: 90%;
-    //         width: 6.4em;
-    //     }
-    // }
-
-    // @keyframes coming-soon {
-    //     0% {
-    //         opacity: 0;
-    //     }
-    //     100% {
-    //         opacity: 1;
-    //     }
-    // }
 
     @keyframes neon-bzz-typo {
         0% {
