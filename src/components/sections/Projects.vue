@@ -36,7 +36,7 @@ export default {
                     links:{link:"", github:"https://github.com/case95/myjobapp"},
                     skills:["React.js", "Redux", "Node.js", "Express", "JWT token"],
                     image:["/img/projects/theitalianjob_1.png", "/img/projects/theitalianjob_2.png"],
-                    description:"TheItalianJob project is a platform thought for italian people linving abroad who are looking for other italian workers. \nTIt has born looking in italian groups of people living abroad: there's an high request of workers with the same backgound. It features an authentication system to create your profile so the employers can search for their best fit. \nIt is in development phase and covers some full-stack development skills, an intresting challenge for myself.",
+                    description:"TheItalianJob project is a platform thought for italian people linving abroad who are looking for other italian workers. \nThis project has born looking in italian groups of people living abroad: there's an high request of workers with the same backgound. It features an authentication system to create your profile so the employers can search for their best fit. \nIt is in development phase and covers some full-stack development skills, an intresting challenge for myself.",
                 },
                 {
                     title:"Portfolio 1.0.0",
