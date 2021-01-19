@@ -95,14 +95,14 @@ export default {
         }
 
         .logo-cropper {
-            width: 100% !important;
+            width: 90% !important;
             height: unset;
             text-align: center;
         }
         
         .head {
 
-            transform: translate(50px, 0px);
+            transform: translate(5px, 39px);
             animation: head 3s ease forwards, animation,
             bounce-head 1.5s ease-in-out forwards 3.5s infinite;
         }
@@ -171,7 +171,7 @@ export default {
             width: unset !important;
         }
         .logo-cropper {
-            height: 100% !important;
+            height: 90% !important;
             border-radius: 9999px;
             background-color: $my-black;
         }
@@ -189,12 +189,12 @@ export default {
     }
 
     .logo-cropper {
-        width: 100%;
-        border-radius: 9999px;
+        width: 90%;
+        border-radius: 50%;
         background-color: $my-black;
     }
     .head {
-        transform: translate(50px, 0px);
+        transform: translate(5px, 39px);
         animation: head 3s ease forwards, animation,
             bounce-head 1.5s ease-in-out forwards 3.5s infinite;
     }
