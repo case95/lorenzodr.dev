@@ -1,22 +1,25 @@
 <template>
     <div class="loader" id="loader">
         <div class="logo-container">
-            <svg class="logo-cropper" id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 70 70">
-                <circle cx="30" cy="30" r="35" stroke="white" stroke-width="5" fill="transparent" />
-                <g class='head'>
-                    <path class="cls-1" d="M44.88,34.47c0-.29,0-.59,0-.88a11,11,0,0,0-17.65-8.85,12.85,12.85,0,0,0-8.93-3.58A12.59,12.59,0,0,0,6.09,36.57,7.9,7.9,0,0,0,0,44.25H3.49a4.4,4.4,0,0,1,4.4-4.4l.4,0,.38,0a11.17,11.17,0,0,1,3,.88,43,43,0,0,1-1.86-3.94,9.06,9.06,0,0,1,8.53-12.2,9.25,9.25,0,0,1,7.38,3.6L27,29.9l1.42-1.5a7.55,7.55,0,0,1,13,5.19c0,.16,0,.32,0,.48a4.33,4.33,0,0,1-1.59,2.83,4.39,4.39,0,0,1,2.65.23,7.21,7.21,0,0,1,4.05,6.46q0,.29,0,.57l3.48.28c0-.28,0-.56,0-.84A10.71,10.71,0,0,0,44.88,34.47Z"/>
-                    <circle class="cls-1" cx="15.96" cy="45" r="2.28"/>
-                    <circle class="cls-1" cx="34.17" cy="45" r="2.28"/>
-                </g>
-                <g class='lightbulb'>
-                    <path id='lightbulb' class="lightbulb-outline" d="M25,0H25a7.23,7.23,0,0,0-5.47,11.85A7,7,0,0,1,20.68,14c.26,1,.32,1.38.32,1.38h0l.05.49v2l0,.3c.16,1,1.16,2.71,3.88,2.78H25c2.72-.07,3.71-1.78,3.87-2.78v-2.2L29,15.4s.05-.32.33-1.43a7,7,0,0,1,1.16-2.08A7.23,7.23,0,0,0,25,0Zm0,19c-1.88,0-2.07-1.2-2.07-1.2V16.11h4.14v1.73S26.88,19,25,19Zm4-8.37a9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22H22.89l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8Z"/>
-                    <path class="cls-2 light" d="M22.89,15.36l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8,9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22"/>
-                    
-                </g>
-            </svg>
-            <svg viewBox="0 0 50 50" class="light-glow-container">
-            <path class="light-glow" d="M22.89,15.36l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8,9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22"/>
-            </svg>
+            <div class="circle-container">
+                <svg class="logo-cropper" id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 70 70">
+                    <circle cx="30" cy="30" r="35" stroke="white" stroke-width="5" fill="transparent" />
+                    <g class='head'>
+                        <path class="cls-1" d="M44.88,34.47c0-.29,0-.59,0-.88a11,11,0,0,0-17.65-8.85,12.85,12.85,0,0,0-8.93-3.58A12.59,12.59,0,0,0,6.09,36.57,7.9,7.9,0,0,0,0,44.25H3.49a4.4,4.4,0,0,1,4.4-4.4l.4,0,.38,0a11.17,11.17,0,0,1,3,.88,43,43,0,0,1-1.86-3.94,9.06,9.06,0,0,1,8.53-12.2,9.25,9.25,0,0,1,7.38,3.6L27,29.9l1.42-1.5a7.55,7.55,0,0,1,13,5.19c0,.16,0,.32,0,.48a4.33,4.33,0,0,1-1.59,2.83,4.39,4.39,0,0,1,2.65.23,7.21,7.21,0,0,1,4.05,6.46q0,.29,0,.57l3.48.28c0-.28,0-.56,0-.84A10.71,10.71,0,0,0,44.88,34.47Z"/>
+                        <circle class="cls-1" cx="15.96" cy="45" r="2.28"/>
+                        <circle class="cls-1" cx="34.17" cy="45" r="2.28"/>
+                    </g>
+                    <g class='lightbulb'>
+                        <path id='lightbulb' class="lightbulb-outline" d="M25,0H25a7.23,7.23,0,0,0-5.47,11.85A7,7,0,0,1,20.68,14c.26,1,.32,1.38.32,1.38h0l.05.49v2l0,.3c.16,1,1.16,2.71,3.88,2.78H25c2.72-.07,3.71-1.78,3.87-2.78v-2.2L29,15.4s.05-.32.33-1.43a7,7,0,0,1,1.16-2.08A7.23,7.23,0,0,0,25,0Zm0,19c-1.88,0-2.07-1.2-2.07-1.2V16.11h4.14v1.73S26.88,19,25,19Zm4-8.37a9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22H22.89l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8Z"/>
+                        <path class="cls-2 light" d="M22.89,15.36l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8,9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22"/>
+                        
+                    </g>
+                </svg>
+                <svg viewBox="-10 -7 70 70" class="light-glow-container">
+                    <path class="light-glow" d="M22.89,15.36l0-.22s0-.28-.37-1.63A9.09,9.09,0,0,0,21,10.68a5.36,5.36,0,0,1,4-8.8h0a5.36,5.36,0,0,1,4,8.8,9.08,9.08,0,0,0-1.54,2.84c-.34,1.35-.37,1.63-.37,1.63l0,.22"/>
+                </svg>
+            </div>
+            
             <div class="logotype-container">
             <svg class="logotype" id="logotype"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 68.31 5.91" ><title>Asset 14</title>
                 <g class='ldr'>
@@ -48,8 +51,6 @@
 <script>
 export default {
     name:"PageLoader",
-    
-    
 }
 </script>
 
@@ -73,9 +74,6 @@ export default {
         background-color: $my-black;
         transition: opacity 0.3s ease-in-out;;
     }
-   
-
-
 
     .bg-dark {
         background-color: $my-black;
@@ -92,12 +90,6 @@ export default {
             transform: translate(-50%, -50%);
             height: unset !important;
             width: 80% !important;
-        }
-
-        .logo-cropper {
-            width: 90% !important;
-            height: unset;
-            text-align: center;
         }
         
         .head {
@@ -125,16 +117,16 @@ export default {
             animation: lights-on 0.5s ease-in forwards 3s;
         }
 
-        .light-glow-container {
-            width: 75% !important;
-            position: absolute;
-            top: 6% !important;
-            opacity: 0;
-            filter: blur(25px);
-            animation: lights-on 0.5s ease-in forwards 3s,
-            bounce-glow 1.5s ease-in-out forwards 3.5s infinite;
-            mix-blend-mode: hard-light;
-        }
+        // .light-glow-container {
+        //     width: 75% !important;
+        //     position: absolute;
+        //     top: 6% !important;
+        //     opacity: 0;
+        //     filter: blur(25px);
+        //     animation: lights-on 0.5s ease-in forwards 3s,
+        //     bounce-glow 1.5s ease-in-out forwards 3.5s infinite;
+        //     mix-blend-mode: hard-light;
+        // }
 
         .light-glow {
             top: 0;
@@ -170,11 +162,6 @@ export default {
             height: unset !important;
             width: unset !important;
         }
-        .logo-cropper {
-            height: 90% !important;
-            border-radius: 9999px;
-            background-color: $my-black;
-        }
     }
 
     .logo-container {
@@ -188,10 +175,22 @@ export default {
         align-items: center;
     }
 
-    .logo-cropper {
+    .circle-container {
         width: 90%;
+        height: 0;
+        padding-top: 90%;
+        text-align: center;
+        position: relative;
         border-radius: 50%;
+        overflow: hidden;
+    }
+
+    .logo-cropper {
+        width: 100%;
         background-color: $my-black;
+        position: absolute;
+        top: 0;
+        left: 0;
     }
     .head {
         transform: translate(5px, 39px);
@@ -218,10 +217,11 @@ export default {
     }
 
     .light-glow-container {
-        width: 70%;
+        width: 100%;
         position: absolute;
-        top: 5%;
-        transform: translateY(6%);
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 6%);
         opacity: 0;
         filter: blur(25px);
         animation: lights-on 0.5s ease-in forwards 3s,
@@ -236,15 +236,15 @@ export default {
 
     @keyframes bounce-glow {
         0% {
-            transform: translateY(6%);
+            transform: translate(-50%, 6%);
             filter: blur(25px);
         }
         50% {
-            transform: translateY(0px);
+            transform: translate(-50%, 0);
             filter: blur(10px);
         }
         100% {
-            transform: translateY(6%);
+            transform: translate(-50%, 6%);
             filter: blur(25px);
         }
     }
