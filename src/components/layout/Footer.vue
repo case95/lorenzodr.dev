@@ -1,7 +1,7 @@
 <template>
     <div class="footer">
         <p class="footer-copyright">
-            Designed and developed by Lorenzo Del Rosario  <i class="fa fa-linkedin"></i>
+            Developed by Lorenzo Del Rosario  <a href=" https://www.linkedin.com/in/lorenzo-del-rosario-4b2a9514b/"><i class="fa fa-linkedin"></i></a>
         </p>
     </div>
 </template>
