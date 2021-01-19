@@ -154,6 +154,10 @@ export default {
     }
 
     @media screen and (orientation: landscape) {
+        .circle-container {
+            width: 70% !important;
+            padding-top: 70% !important;
+        }
         .logo-container {
             position: absolute;
             top: 50%;
@@ -161,13 +165,6 @@ export default {
             transform: translate(-50%, -50%);
             height: unset !important;
             width: unset !important;
-        }
-    }
-
-    @media screen and (orientation: landscape) and (max-width:$MD) {
-        .circle-container {
-            width: 70% !important;
-            padding-top: 70% !important;
         }
     }
 
