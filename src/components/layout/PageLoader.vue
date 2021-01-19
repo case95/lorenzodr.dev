@@ -172,7 +172,7 @@ export default {
         }
         .logo-cropper {
             height: 100% !important;
-            border-radius: 50%;
+            border-radius: 9999px;
             background-color: $my-black;
         }
     }
@@ -190,7 +190,7 @@ export default {
 
     .logo-cropper {
         width: 100%;
-        border-radius: 50%;
+        border-radius: 9999px;
         background-color: $my-black;
     }
     .head {
