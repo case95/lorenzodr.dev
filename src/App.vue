@@ -1,8 +1,8 @@
 <template>
-  <PageLoader v-if="true"/>
-  <Header v-if="false"/>
-  <Container v-if="false"/>
-  <Footer v-if="false"/>
+  <PageLoader v-if="!isLoaded"/>
+  <Header />
+  <Container v-if="content"/>
+  <Footer />
 </template>
 
 <script>
@@ -19,20 +19,20 @@
             content: false
         }
     },
-    // mounted() {
-    //     document.onreadystatechange = () => {
-    //       const loader = document.getElementById("loader")
-    //         setTimeout(() => {
-    //             if (document.readyState === 'complete') {
-    //                 this.content = true
-    //                 loader.style.opacity = 0
-    //                 setTimeout(() => {
-    //                   this.isLoaded = true
-    //                 }, 300)
-    //             }
-    //         }, 5000)
-    //     }
-    // }
+    mounted() {
+        document.onreadystatechange = () => {
+          const loader = document.getElementById("loader")
+            setTimeout(() => {
+                if (document.readyState === 'complete') {
+                    this.content = true
+                    loader.style.opacity = 0
+                    setTimeout(() => {
+                      this.isLoaded = true
+                    }, 300)
+                }
+            }, 5000)
+        }
+    }
   }
 </script>
 
