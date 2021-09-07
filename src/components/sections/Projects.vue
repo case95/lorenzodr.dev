@@ -25,29 +25,39 @@ export default {
     return {
       placeholder: [
         {
+          title: "Dedit - currently in testing",
+          links: { link: "http://dev.dedit.io/signup", github: "" },
+          skills: [
+            "React",
+            "Typescript",
+            "Styled Components",
+            "Encrypt Decrypt",
+          ],
+          image: [
+            "/img/projects/Dedit_notarizations.png",
+            "/img/projects/Dedit_notarization.png",
+          ],
+          description:
+            "Dedit is a Blockchain Italia product and it consists in a notarization app that allows the user to notarize, store and encrypt almost any kind of file. \nIts first version has been realized in Angular2 and my role was to migrate the old front-end to a more user-friendly and functional one developed in React-Typescript. \nThe application currently works but it's still in the testing phase.",
+        },
+        {
           title: "Aeolians",
           links: {
             link: "https://www.aeoliansholiday.com/",
             github: "https://github.com/case95/aeolians",
           },
-          skills: ["React.js", "Redux", "Firebase", "Firebase-authentication"],
+          skills: ["React", "Redux", "Firebase", "Firebase-auth"],
           image: [
             "/img/projects/aeolians_1.png",
             "/img/projects/aeolians_2.png",
           ],
           description:
-            "Aeolians is an italian rental company for holiday houses in Eolie Islands. \nMy work has been to design the visual identity of the website and develope it in React.js, connecting the website to a firebase database and develop a custom CMS to allow the business owner to manage the apartments informations like descriptions, photos, services, booking links. \nThe main challenge has been understanding and working with a NOSQL database and manage the authentication on Firebase rules.",
+            "Aeolians is an italian rental company for holiday houses in Eolie Islands. \nMy work has been to design the visual identity of the website and develope it in React.js, connecting the website to a Firebase database and develop a custom CMS to allow the business owner to manage the apartments informations like descriptions, photos, services, booking links. \nThe main challenge has been understanding and working with a noSQL database and manage the authentication on Firebase rules.",
         },
         {
           title: "The Italian Job",
           links: { link: "", github: "https://github.com/case95/myjobapp" },
-          skills: [
-            "React.js",
-            "Redux",
-            "Node.js",
-            "Express",
-            "JWT-authentication",
-          ],
+          skills: ["React", "Redux", "Node", "Express", "JWT-auth"],
           image: [
             "/img/projects/theitalianjob_1.png",
             "/img/projects/theitalianjob_2.png",
@@ -61,7 +71,7 @@ export default {
             link: "",
             github: "https://github.com/case95/lorenzodr.dev",
           },
-          skills: ["Vue.js", "SCSS"],
+          skills: ["Vue", "SCSS"],
           image: [
             "/img/projects/lorenzodr_1.png",
             "/img/projects/lorenzodr_2.png",
