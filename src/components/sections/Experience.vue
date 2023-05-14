@@ -1,6 +1,9 @@
 <template>
   <div class="experience" id="experience">
-    <SectionTitle title="Experience" />
+    <SectionTitle
+      title="My Professional Journey"
+      subtitle="(Click on job titles to discover more)"
+    />
 
     <ExperiencesAccordion
       :v-if="placeholder.length > 0"
@@ -30,16 +33,32 @@ export default {
     Button,
     ExperiencesAccordion,
   },
-  data: function() {
+  data: function () {
     return {
       placeholder: [
         {
+          title: "Software Engineer",
+          institution: "Sportsbet",
+          date: "Dec 2022 - Now",
+          image: "/img/experience/sportsbet-logo.png",
+          description:
+            "This is the biggest company I've worked so far. I'm facing a lot of new challenges as I'm moving form a Front-End engineer to a Full-Stack Engineer role. \nThe Front-End stack mainly uses React.js, React Native and the old Redux (2015 version, Redux Toolkid and nice hooks with automated typings). \nThe Back-End varies across multiple languages (TS, Java, Kotlin, Python) and is fully based on AWS. It's a great experience to get comfortable with cloud-computing technologies.",
+        },
+        {
+          title: "React Developer",
+          institution: "GoMarkets",
+          date: "Mar 2022 - Dec 2022",
+          image: "/img/experience/GO-logo.png",
+          description:
+            "Development of various tools for internal monitoring & auditing of the business, invoicing tools and optimized performances and accessibility on client side web-apps.",
+        },
+        {
           title: "React Developer",
           institution: "Blockchain Italia",
-          date: "Mar 2021 - Now",
+          date: "Mar 2021 - Nov 2022",
           image: "/img/experience/BCI-logo.png",
           description:
-            "I'm quite fond of this blockchain startup based in Milan. Here I've worked autonomously on the migration of a web-app front-end from Angular 2 to React.js using Typescript. It has been a bit of a challenge but I've managed to learn a lot of new things such as Styled Components and Typescript. I am currently working on the front-end a of a dApp using Flutter. I've decided to get involved in this Flutter project to learn more about strongly typed languages as Dart is very similar to Java and to directly approach OOP while discovering the mobile development. Three birds with one stone!",
+            "I'm quite fond of this blockchain startup based in Milan. Here I've worked autonomously on the migration of a web-app front-end from Angular 2 to React.js with Typescript. It has been a bit of a challenge but I've managed to learn a lot of new things such as Styled Components and Typescript. I have then worked on the front-end a of a dApp using Flutter. I've decided to get involved in this Flutter project to learn more about strongly typed languages as Dart is very similar to Java and to directly approach OOP while discovering the mobile development. Three birds with one stone!",
         },
         {
           title: "Front-end Apprenticeship",

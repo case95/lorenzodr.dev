@@ -118,6 +118,7 @@ export default {
         &-tables {
           display: flex;
           flex-direction: column;
+          flex-wrap: wrap;
           table {
             max-width: 300px;
             tr {
