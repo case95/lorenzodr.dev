@@ -2,7 +2,19 @@
   <div class="cv" id="cv">
     <SectionTitle title="CV" />
     <div class="pdf-container">
-      <embed :src="pdfLink" type="application/pdf" class="pdf" />
+      <object
+        :data="pdfLink"
+        type="application/pdf"
+        frameborder="0"
+        class="pdf"
+      >
+        <p>
+          Your web browser doesn't have a PDF plugin. Instead you can
+          <a href="/cv.pdf" download="Lorenzo Del Rosario Curriculum"
+            >click here to download the PDF file.</a
+          >
+        </p>
+      </object>
     </div>
     <div class="cv-button-container">
       <a href="/cv.pdf" download="Lorenzo Del Rosario Curriculum">
