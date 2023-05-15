@@ -4,22 +4,20 @@
     <div class="about-content">
       <div class="bio">
         <p class="bio-text">
-          Hi, I'm Lorenzo, it's nice to have you here! I'm an Italian-australian
-          frontend developer, curious by nature, wannabe fullstack developer and
-          always aiming at improvement.<br /><br />
-          Since a young age I've always been passionated by creating something
-          out of nothing: I was always drawing, painting or 3D modeling. This
-          passion moved me to get a bachelor in product design during which I
-          started thinking about web development. So, after I completed the
-          product design bachelore, I started moving my first steps with the
-          rudimentals of HTML and CSS and some basic programming courses. The
-          more I studied it the more I enjoyed it. During 2020 I fully submerged
-          in the web development world so I joinined and created groups of
-          developers thought to share our development skills by having meetings
-          during our free time to discuss about web technologies.<br /><br />
-          I'm now attending a Web Development Diploma at Holmesglen in Melbourne
-          while looking to offer my skills and learn much more in the near
-          future. <b>#alwayslearning</b>
+          Hello, I'm Lorenzo, an Italian-Australian software engineer
+          specializing in frontend development, and currently working my way to
+          be a fullstack developer.<br /><br />
+          Since a young age I've always been fascinated by the creative process:
+          I was always drawing, painting or 3D modeling. This passion moved me
+          to get a bachelor in product design during which I started thinking
+          about web development. Upon completing my degree, I dove into web
+          development in 2019. While pursuing a Web Development Diploma at
+          Holmesglen in Melbourne, I joined and formed groups of developers,
+          enhancing our skills through regular discussions on web technologies.
+          <br /><br />
+          In my free time I'm currently working on personal projects.<b
+            >#alwayslearning</b
+          >
         </p>
         <div class="skillset">
           <p class="skillset-introduction">
@@ -35,18 +33,21 @@
               <tbody>
                 <tr>
                   <td>HTML</td>
-                  <td>React</td>
-                </tr>
-                <tr>
                   <td>(S)CSS</td>
-                  <td>Vue.js</td>
-                </tr>
-                <tr>
-                  <td>JavaScript</td>
                   <td>Node.js</td>
                 </tr>
                 <tr>
-                  <td>Flutter 🎉</td>
+                  <td>React</td>
+                  <td>React Native</td>
+                  <td>Next JS</td>
+                </tr>
+                <tr>
+                  <td>JavaScript</td>
+                  <td>TypeScript</td>
+                  <td>Nuxt</td>
+                </tr>
+                <tr>
+                  <td>AWS</td>
                 </tr>
               </tbody>
             </table>
@@ -59,10 +60,15 @@
               <tbody>
                 <tr>
                   <td>Photoshop</td>
+                  <td>ATOMIC design</td>
+                </tr>
+                <tr>
                   <td>InDesign</td>
                 </tr>
                 <tr>
                   <td>Illustrator</td>
+                </tr>
+                <tr>
                   <td>Figma</td>
                 </tr>
               </tbody>

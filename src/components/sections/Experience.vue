@@ -14,7 +14,7 @@
     />
 
     <div class="button-container">
-      <a href="/Lorenzo Del Rosario's Curriculum.pdf" download>
+      <a href="/cv.pdf" download="Lorenzo Del Rosario Curriculum">
         <Button child="Download Resume" />
       </a>
     </div>

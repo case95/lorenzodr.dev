@@ -2,14 +2,10 @@
   <div class="cv" id="cv">
     <SectionTitle title="CV" />
     <div class="pdf-container">
-      <embed
-        src="/Lorenzo Del Rosario's Curriculum.pdf"
-        type="application/pdf"
-        class="pdf"
-      />
+      <embed :src="pdfLink" type="application/pdf" class="pdf" />
     </div>
     <div class="cv-button-container">
-      <a href="/Lorenzo Del Rosario's Curriculum.pdf" download>
+      <a href="/cv.pdf" download="Lorenzo Del Rosario Curriculum">
         <Button child="Download Resume" />
       </a>
     </div>
@@ -25,6 +21,11 @@ export default {
   components: {
     SectionTitle,
     Button,
+  },
+  computed: {
+    pdfLink() {
+      return `${process.env.VUE_APP_SERVER_URL}cv.pdf`;
+    },
   },
 };
 </script>
