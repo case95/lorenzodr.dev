@@ -27,7 +27,7 @@
         v-for="(skill, index) in project.skills"
         :key="'skill-' + index"
       >
-        {{ skill }}
+        {{ skill }}<span class="skill-divider"> |&nbsp;</span>
       </li>
     </ul>
     <div class="project-content">
@@ -121,24 +121,44 @@ export default {
   }
   #{&}-skillset {
     display: flex;
+    flex-wrap: wrap;
+    row-gap: 6px;
     margin-bottom: 20px;
     margin-top: 4px;
     .skill {
       font-family: "Inconsolata", monospace;
-      padding-right: 10px;
+      color: $my-acqua;
+      &-divider {
+        color: $my-white;
+      }
     }
   }
   #{&}-content {
     .swiper-button-prev,
     .swiper-button-next {
-      width: 50px;
-      height: 50px;
-      background-color: rgba(255, 255, 255, 0.5);
+      width: 25px;
+      height: 25px;
+      background-color: $my-black-transparent;
       border-radius: 99px;
+      backdrop-filter: blur(2px);
+      transition: all 0.2s ease-in-out;
+      box-shadow: 0px 1px 2px $my-black-transparent;
       &:after {
-        font-size: 2rem;
+        font-size: 0.75rem;
         font-weight: 900;
-        color: $my-black;
+        color: $my-acqua;
+        text-shadow: 0 0 6px $my-acqua, 0 0 1px $my-white;
+        animation: neon-bzz 3s forwards infinite;
+      }
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0px 2px 4px $my-black-transparent;
+      }
+      &:active {
+        box-shadow: 0px 2px 4px $my-black-transparent;
+        transform: translateY(0px);
+        box-shadow: none;
+        transition: all 0.1s ease-in-out;
       }
     }
     &-cropper {
@@ -172,6 +192,35 @@ export default {
   }
 }
 
+@media screen and (min-width: $SM) {
+  .project {
+    #{&}-content {
+      .swiper-button-prev,
+      .swiper-button-next {
+        width: 35px;
+        height: 35px;
+        &:after {
+          font-size: 1.1rem;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $MD) {
+  .project {
+    #{&}-content {
+      .swiper-button-prev,
+      .swiper-button-next {
+        width: 50px;
+        height: 50px;
+        &:after {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+}
 @media screen and (min-width: $XXL) {
   .project {
     padding: 20px 0;

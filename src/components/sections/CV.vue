@@ -1,12 +1,13 @@
 <template>
   <div class="cv" id="cv">
     <SectionTitle title="CV" />
-    <embed
-      src="/Lorenzo Del Rosario's Curriculum.pdf"
-      type="application/pdf"
-      width="100%"
-      class="pdf"
-    />
+    <div class="pdf-container">
+      <embed
+        src="/Lorenzo Del Rosario's Curriculum.pdf"
+        type="application/pdf"
+        class="pdf"
+      />
+    </div>
     <div class="cv-button-container">
       <a href="/Lorenzo Del Rosario's Curriculum.pdf" download>
         <Button child="Download Resume" />
@@ -39,8 +40,14 @@ export default {
     position: relative;
     z-index: 1;
   }
-  .pdf {
-    aspect-ratio: 1/1;
+  .pdf-container {
+    display: flex;
+    justify-content: center;
+    .pdf {
+      width: 300px;
+      max-width: 300px;
+      aspect-ratio: 20/29.33;
+    }
   }
   #{&}-text {
     margin-top: 20px;
@@ -48,6 +55,31 @@ export default {
   #{&}-button-container {
     margin-top: 25px;
     text-align: center;
+  }
+
+  @media screen and (min-width: $SM) {
+    .pdf-container {
+      .pdf {
+        width: 500px;
+        max-width: 500px;
+      }
+    }
+  }
+  @media screen and (min-width: $LG) {
+    .pdf-container {
+      .pdf {
+        width: 600px;
+        max-width: 600px;
+      }
+    }
+  }
+  @media screen and (min-width: $XL) {
+    .pdf-container {
+      .pdf {
+        width: 800px;
+        max-width: 800px;
+      }
+    }
   }
 }
 </style>
