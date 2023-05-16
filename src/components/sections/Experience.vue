@@ -4,7 +4,6 @@
       title="My Professional Journey"
       subtitle="(Click on job titles to discover more)"
     />
-
     <ExperiencesAccordion
       :v-if="placeholder.length > 0"
       v-for="(experience, index) in placeholder"
@@ -12,9 +11,11 @@
       :key="'experience' + index"
       :experience="experience"
     />
-
     <div class="button-container">
-      <a href="/cv.pdf" download="Lorenzo Del Rosario Curriculum">
+      <a
+        href="https://drive.google.com/uc?export=download&id=1MMYxx23ab3xmWlfqkVtdhe57srldX5lo"
+        download="Lorenzo Del Rosario Curriculum"
+      >
         <Button child="Download Resume" />
       </a>
     </div>

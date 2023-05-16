@@ -2,22 +2,17 @@
   <div class="cv" id="cv">
     <SectionTitle title="CV" />
     <div class="pdf-container">
-      <object
-        :data="pdfLink"
-        type="application/pdf"
-        frameborder="0"
+      <iframe
+        src="https://drive.google.com/file/d/1MMYxx23ab3xmWlfqkVtdhe57srldX5lo/preview#toolbar=0&scrollbar=0"
+        frameBorder="0"
         class="pdf"
-      >
-        <p>
-          Your web browser doesn't have a PDF plugin. Instead you can
-          <a href="/cv.pdf" download="Lorenzo Del Rosario Curriculum"
-            >click here to download the PDF file.</a
-          >
-        </p>
-      </object>
+      />
     </div>
     <div class="cv-button-container">
-      <a href="/cv.pdf" download="Lorenzo Del Rosario Curriculum">
+      <a
+        href="https://drive.google.com/uc?export=download&id=1MMYxx23ab3xmWlfqkVtdhe57srldX5lo"
+        download="Lorenzo Del Rosario Curriculum"
+      >
         <Button child="Download Resume" />
       </a>
     </div>
@@ -33,11 +28,6 @@ export default {
   components: {
     SectionTitle,
     Button,
-  },
-  computed: {
-    pdfLink() {
-      return `${process.env.VUE_APP_SERVER_URL}cv.pdf`;
-    },
   },
 };
 </script>

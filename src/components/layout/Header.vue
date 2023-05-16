@@ -83,7 +83,10 @@
         </a>
       </ul>
       <div>
-        <a href="/cv.pdf" download="Lorenzo Del Rosario Curriculum">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1MMYxx23ab3xmWlfqkVtdhe57srldX5lo"
+          download="Lorenzo Del Rosario Curriculum"
+        >
           <Button class="nav-button" child="Resume" />
         </a>
       </div>
