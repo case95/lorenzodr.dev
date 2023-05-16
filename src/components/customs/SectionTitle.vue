@@ -30,7 +30,7 @@ export default {
     display: flex;
     flex-direction: row;
     .title {
-      font-size: $h2;
+      font-size: $h1;
       text-transform: capitalize;
       margin-right: 10px;
       font-family: "Inconsolata", monospace;

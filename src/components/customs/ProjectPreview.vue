@@ -1,7 +1,9 @@
 <template>
   <li class="project">
-    <h2 class="project-title">
-      {{ project.title }}
+    <div class="project-title">
+      <h2 class="project-title-text">
+        {{ project.title }}
+      </h2>
       <span class="links">
         <a
           v-if="project.links.github !== ''"
@@ -20,14 +22,17 @@
           ><i class="fa fa-external-link-square" aria-hidden="true"></i
         ></a>
       </span>
-    </h2>
+    </div>
     <ul class="project-skillset">
       <li
         class="skill"
         v-for="(skill, index) in project.skills"
         :key="'skill-' + index"
       >
-        {{ skill }}<span class="skill-divider"> |&nbsp;</span>
+        {{ skill
+        }}<span v-if="index + 1 < project.skills.length" class="skill-divider">
+          |&nbsp;</span
+        >
       </li>
     </ul>
     <div class="project-content">
@@ -104,10 +109,12 @@ export default {
   border-bottom: 1px solid $my-white;
   #{&}-title {
     display: flex;
-    justify-content: space-between;
+    gap: 8px;
     .links {
+      min-width: max-content;
       .link {
         color: $my-acqua;
+        font-size: $h2;
         &:hover {
           color: $my-white;
           text-shadow: 0 0 6px $my-acqua, 0 0 1px $my-white;

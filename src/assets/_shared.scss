@@ -10,6 +10,7 @@ $my-acqua: #60dafb;
 //font-size
 $text: 16px;
 $button: 16px;
+$h1: 24px;
 $h2: 20px;
 $h3: 16px;
 $h4: 12px;
@@ -25,6 +26,10 @@ $MD: 768px;
 $LG: 992px;
 $XL: 1200px;
 $XXL: 1400px;
+
+h2 {
+  font-size: $h2;
+}
 
 //mixins
 

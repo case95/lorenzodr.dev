@@ -148,7 +148,7 @@ This predicament led to the creation of the proprietary the RSG proprietary NPM 
         },
         {
           id: "AEOL",
-          title: "Aeolians(decommissioned)",
+          title: "Aeolians (decommissioned)",
           links: {
             link: "https://www.aeoliansholiday.com/",
             github: "https://github.com/case95/aeolians",

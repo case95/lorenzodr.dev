@@ -8,7 +8,7 @@
         <span class="love">love</span>
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; being a
       </span>
-      web developer.
+      software engineer.
     </h1>
     <p class="introduction">
       “<span class="quote">God is in the details</span>” said Mies van der Rohe,
@@ -50,11 +50,8 @@ export default {
       position: absolute;
       text-decoration: underline $my-acqua;
       @include transition-hero;
-      &:hover {
-        animation: pump 1.5s ease-in-out forwards infinite;
-        color: $my-acqua;
-        @include transition-hero;
-      }
+      color: $my-acqua;
+      animation: pump 1.5s ease-in-out forwards infinite;
     }
   }
   .introduction {

@@ -43,7 +43,7 @@ export default {
           date: "Dec 2022 - Now",
           image: "/img/experience/sportsbet-logo.png",
           description:
-            "This is the biggest company I've worked so far. I'm facing a lot of new challenges as I'm moving form a Front-End engineer to a Full-Stack Engineer role. \nThe Front-End stack mainly uses React.js, React Native and the old Redux (2015 version, Redux Toolkid and nice hooks with automated typings). \nThe Back-End varies across multiple languages (TS, Java, Kotlin, Python) and is fully based on AWS. It's a great experience to get comfortable with cloud-computing technologies.",
+            "This is the biggest company I've worked so far. I'm facing a lot of new challenges as I'm moving form a Front-End engineer to a Full-Stack Engineer role. \nThe Front-End stack mainly uses React.js, React Native and the old Redux (2015 version, no Redux Toolkit and nice hooks with automated typings 😅). \nThe Back-End varies across multiple languages (TypeScript, Java, Kotlin, Python) and is fully based on AWS. It's a great experience to get comfortable with cloud-computing technologies.",
         },
         {
           title: "React Developer",
