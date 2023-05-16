@@ -2,8 +2,8 @@
   <div class="cv" id="cv">
     <SectionTitle title="CV" />
     <div class="pdf-container">
-      <iframe
-        src="https://drive.google.com/file/d/1MMYxx23ab3xmWlfqkVtdhe57srldX5lo/preview#toolbar=0&scrollbar=0"
+      <embed
+        src="https://drive.google.com/file/d/1MMYxx23ab3xmWlfqkVtdhe57srldX5lo/preview#toolbar=0"
         frameBorder="0"
         class="pdf"
       />
