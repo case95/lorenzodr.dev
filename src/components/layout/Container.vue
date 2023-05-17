@@ -37,8 +37,9 @@ export default {
 .container {
   padding: 0 25px;
   color: $my-white;
-  background-color: $my-black;
   transition: padding 0.2s ease-in-out;
+  max-width: $XXL;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: $SM) {

@@ -21,14 +21,17 @@ $ratio-16-9: 56.25%;
 $ratio-16-9-flex-2-3: 37.5%;
 
 //breakpoints
-$SM: 576px;
+$SM: 640px;
 $MD: 768px;
-$LG: 992px;
-$XL: 1200px;
-$XXL: 1400px;
+$LG: 1024px;
+$XL: 1280px;
+$XXL: 1536px;
 
-h2 {
-  font-size: $h2;
+body {
+  background-color: $my-black;
+  h2 {
+    font-size: $h2;
+  }
 }
 
 //mixins
