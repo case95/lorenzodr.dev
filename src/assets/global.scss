@@ -1,0 +1,30 @@
+@import "/src/assets/_shared.scss";
+@import "/src/assets/_fontawesome.scss";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  list-style-type: none !important;
+  &::marker {
+    content: "" !important;
+    display: none !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
+  body {
+    // To hide the sidebar on site loader on
+    // It will then be set to normal through JS once the loading screen disappear
+    overflow: hidden;
+    background-color: $my-black;
+    margin: 0;
+    h2 {
+      font-size: $h2;
+    }
+    a {
+      text-decoration: none;
+      color: $my-white;
+    }
+  }
+}

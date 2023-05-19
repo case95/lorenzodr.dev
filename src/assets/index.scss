@@ -1,0 +1,27 @@
+@import "/src/assets/_shared.scss";
+
+.container {
+  padding: 0 25px;
+  color: $my-white;
+  transition: padding 0.2s ease-in-out;
+  max-width: $XXL;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: $SM) {
+  .container {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (min-width: $MD) {
+  .container {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (min-width: $LG) {
+  .container {
+    padding: 0 150px;
+  }
+}

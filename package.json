@@ -1,0 +1,33 @@
+{
+  "name": "astro-lorenzodr-dev",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^2.1.1",
+    "@babel/core": "^7.0.0-0",
+    "@fontsource/inconsolata": "^4.5.10",
+    "@fontsource/roboto": "^4.5.8",
+    "astro": "^2.4.5",
+    "swiper": "^9.3.2",
+    "vite": "^4.0.0",
+    "vue": "^3.2.30"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.4.0",
+    "@fortawesome/free-brands-svg-icons": "^6.4.0",
+    "@fortawesome/free-solid-svg-icons": "^6.4.0",
+    "@fortawesome/vue-fontawesome": "^3.0.3",
+    "postcss": "8.4.19",
+    "sass": "^1.62.1",
+    "stylelint": "^15.6.2",
+    "stylelint-config-recommended-scss": "^11.0.0",
+    "stylelint-config-standard": "^33.0.0"
+  }
+}

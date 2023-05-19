@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+import PageLoader from "../components/layout/PageLoader.vue";
+import CV from "../components/sections/CV.vue";
+import Hero from "../components/sections/Hero.vue";
+import About from "../components/sections/About.vue";
+import Experience from "../components/sections/Experience.vue";
+import Projects from "../components/sections/Projects.vue";
+import Contacts from "../components/sections/Contacts.vue";
+
+import "../assets/index.scss";
+
+---
+
+<Layout title="Welcome to Astro.">
+	<script is:inline>
+		document.onreadystatechange = () => {
+			const loader = document.getElementById("loader");
+			const body = document.getElementsByTagName("body")?.[0];
+			setTimeout(() => {
+				if (document.readyState === "complete") {
+				loader.style.opacity = 0;
+				body.style.overflow ='initial'
+				setTimeout(() => {
+					loader.remove()
+				}, 300);
+				}
+			}, 3500);
+    	};
+
+		window.onload = function () {
+			const header = document.getElementById("header")
+			const hamburger = document.getElementById("hamburger-menu-container")
+			const navSmall  = document.getElementById("navbar-small")
+			
+			var lastScrollTop = 0
+
+			window.addEventListener("scroll", () => {
+				const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+				if (scrollTop > lastScrollTop) {
+					hamburger.classList.remove("hamburger-menu-container-open")
+					hamburger.classList.add("hamburger-menu-container")
+					navSmall.classList.remove("navbar-small-open")
+					navSmall.classList.add("divider-out")
+					header.style.top = "-100px"					
+				}else {
+					header.style.top = "0px"
+				}
+				lastScrollTop = scrollTop
+			})
+		}
+	</script>
+	 <PageLoader />
+	<div class="container">
+		<Hero />
+		<About />
+		<Experience client:idle />
+		<Projects client:idle />
+		<CV />
+		<Contacts />
+  	</div>
+</Layout>
