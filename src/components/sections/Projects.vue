@@ -25,6 +25,25 @@ export default {
     return {
       placeholder: [
         {
+          id: "PORTFOLIO_V2",
+          title: "Portfolio v2",
+          links: {
+            link: "",
+            github: "https://github.com/case95/lorenzodr.dev",
+          },
+          skills: ["Vue 3", "Astro.js"],
+          image: [
+            "/img/projects/portfolio_v2_1.png",
+            "/img/projects/portfolio_v2_2.png",
+          ],
+          description: `The previous version of this website was slow, very slow.
+          
+As I've worked with Next 13, my interest for SSR frameworks grew up and I took the chance to migrate my portfolio from SPA to SSR while studying Astro.js.
+To minimize possible version issues the migration process involved a first migration to Vue 2 to Vue 3 and a subsequent migration to Astro.js.
+
+This allowed the website DOMContentLoaded to shrink from 4-5 seconds to less than 0.200ms.`,
+        },
+        {
           id: "GO_NPM",
           title: "RSG UI Packge",
           skills: [
@@ -137,7 +156,7 @@ This predicament led to the creation of the proprietary the RSG proprietary NPM 
             "React",
             "Typescript",
             "Styled Components",
-            "Encrypt Decrypt",
+            "Encryption / Decryption",
           ],
           image: [
             "/img/projects/Dedit_notarizations.png",
@@ -177,15 +196,15 @@ It is in development phase and covers some full-stack development skills, an int
         },
         {
           id: "PORTFOLIO",
-          title: "Portfolio 1.0.0",
+          title: "Portfolio v1",
           links: {
             link: "",
             github: "https://github.com/case95/lorenzodr.dev",
           },
           skills: ["Vue", "SCSS"],
           image: [
-            "/img/projects/lorenzodr_1.png",
-            "/img/projects/lorenzodr_2.png",
+            "/img/projects/portfolio_v1_1.png",
+            "/img/projects/portfolio_v1_2.png",
           ],
           description:
             "This portfolio has been a fun and easy project that allowed me to focus on learning the basics of Vue 2 framework, SVG animations and move my first steps with SCSS functions, mixins and variables.",
